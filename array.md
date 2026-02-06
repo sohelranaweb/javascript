@@ -70,54 +70,6 @@ console.log(fruits[1]); // Banana
 
 Use this when you know the exact position of the element.
 
-### Access Elements Using a Loop
-
-Sometimes, you don’t just want a single element—you want to **go through all elements** in an array and do something with each of them.
-This is where **loops** become very useful.
-
----
-
-#### 1. Using `for` Loop
-
-The traditional `for` loop is a **step-by-step approach** to access elements using their index.
-
-**Example:**
-
-````js
-let fruits = ["Apple", "Banana", "Mango"];
-
-// Loop through each element using its index
-for (let i = 0; i < fruits.length; i++) {
-  console.log(fruits[i]);
-}
-
-// Output:
-// Apple
-// Banana
-// Mango
-
-
----
-
-### 2. Using 'for...of' Loop
-
-The 'for...of' loop is **cleaner and simpler**. It directly gives you each element one by one without using an index.
-
-**Example:**
-
-```js
-let fruits = ["Apple", "Banana", "Mango"];
-
-// Loop directly through each element
-for (let fruit of fruits) {
-  console.log(fruit);
-}
-```
-// Output:
-// Apple
-// Banana
-// Mango
-
 ---
 
 ## Array Methods in JavaScript: push, pop, shift, unshift
@@ -225,4 +177,7 @@ These methods are very common in real-world JavaScript applications.
 ```
 
 ```
-````
+
+```
+
+```
