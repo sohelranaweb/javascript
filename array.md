@@ -45,3 +45,103 @@ Arrays solve these issues by:
 ### Summary
 
 In short, arrays make your code **organized, scalable, and powerful**.
+
+---
+
+## Array Methods in JavaScript: push, pop, shift, unshift
+
+These methods are used to **add or remove elements** from an array.  
+They directly **modify the original array**.
+
+---
+
+### push() – Add Element to the End of an Array
+
+**What it does:**  
+`push()` adds one or more elements to the **end** of an array.
+
+**Why it is useful:**  
+Use `push()` when you want to add new data at the end of a list, such as adding items to a cart or new messages to a chat.
+
+**Example:**
+
+```js
+let fruits = ["Apple", "Banana"];
+
+fruits.push("Mango");
+
+console.log(fruits);
+// ["Apple", "Banana", "Mango"]
+```
+
+### pop() – Remove Element from the End of an Array
+
+**What it does:**  
+`pop()` removes the **last element** from an array and returns that element.
+
+**Why it is useful:**  
+Use `pop()` when you want to remove the **most recently added item** from a list.
+
+**Example:**
+
+```js
+let fruits = ["Apple", "Banana", "Mango"];
+
+let removedFruit = fruits.pop();
+
+console.log(removedFruit);
+// "Mango"
+
+console.log(fruits);
+// ["Apple", "Banana"]
+```
+
+### unshift() – Add Element to the Beginning of an Array
+
+**What it does:**  
+`unshift()` adds one or more elements to the **start** of an array.
+
+**Why it is useful:**  
+Use `unshift()` when new data should appear at the **beginning** of a list, such as adding a new task at the top of a task list.
+
+**Example:**
+
+```js
+let fruits = ["Banana", "Mango"];
+
+fruits.unshift("Apple");
+
+console.log(fruits);
+// ["Apple", "Banana", "Mango"]
+```
+
+### shift() – Remove Element from the Beginning of an Array
+
+**What it does:**  
+`shift()` removes the **first element** from an array and returns that element.
+
+**Why it is useful:**  
+Use `shift()` when you want to remove the **oldest or first item** from a list.
+
+**Example:**
+
+```js
+let fruits = ["Apple", "Banana", "Mango"];
+
+let removedFruit = fruits.shift();
+
+console.log(removedFruit);
+// "Apple"
+
+console.log(fruits);
+// ["Banana", "Mango"]
+```
+
+### Quick Summary
+
+- `push()` → add element to the **end** of an array
+- `pop()` → remove element from the **end** of an array
+- `unshift()` → add element to the **beginning** of an array
+- `shift()` → remove element from the **beginning** of an array
+
+These methods are very common in real-world JavaScript applications.
