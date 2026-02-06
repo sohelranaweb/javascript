@@ -90,11 +90,11 @@ let fruits = ["Apple", "Banana", "Mango"];
 for (let i = 0; i < fruits.length; i++) {
   console.log(fruits[i]);
 }
-```
-Output:
-Apple
-Banana
-Mango
+
+// Output:
+// Apple
+// Banana
+// Mango
 
 
 ---
@@ -112,11 +112,11 @@ let fruits = ["Apple", "Banana", "Mango"];
 for (let fruit of fruits) {
   console.log(fruit);
 }
-````
-
-Apple
-Banana
-Mango
+```
+// Output:
+// Apple
+// Banana
+// Mango
 
 ---
 
@@ -225,3 +225,4 @@ These methods are very common in real-world JavaScript applications.
 ```
 
 ```
+````
