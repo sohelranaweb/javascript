@@ -55,7 +55,7 @@ They directly **modify the original array**.
 
 ---
 
-### push() – Add Element to the End of an Array
+### 1. push() – Add Element to the End of an Array
 
 **What it does:**  
 `push()` adds one or more elements to the **end** of an array.
@@ -74,7 +74,7 @@ console.log(fruits);
 // ["Apple", "Banana", "Mango"]
 ```
 
-### pop() – Remove Element from the End of an Array
+### 2. pop() – Remove Element from the End of an Array
 
 **What it does:**  
 `pop()` removes the **last element** from an array and returns that element.
@@ -96,7 +96,7 @@ console.log(fruits);
 // ["Apple", "Banana"]
 ```
 
-### unshift() – Add Element to the Beginning of an Array
+### 3. unshift() – Add Element to the Beginning of an Array
 
 **What it does:**  
 `unshift()` adds one or more elements to the **start** of an array.
@@ -115,7 +115,7 @@ console.log(fruits);
 // ["Apple", "Banana", "Mango"]
 ```
 
-### shift() – Remove Element from the Beginning of an Array
+### 4. shift() – Remove Element from the Beginning of an Array
 
 **What it does:**  
 `shift()` removes the **first element** from an array and returns that element.
