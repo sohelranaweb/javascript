@@ -90,11 +90,12 @@ let fruits = ["Apple", "Banana", "Mango"];
 for (let i = 0; i < fruits.length; i++) {
   console.log(fruits[i]);
 }
-```
+
 Output:
 Apple
 Banana
 Mango
+
 
 ---
 
@@ -103,6 +104,7 @@ Mango
 The 'for...of' loop is **cleaner and simpler**. It directly gives you each element one by one without using an index.
 
 **Example:**
+
 ```js
 let fruits = ["Apple", "Banana", "Mango"];
 
