@@ -61,11 +61,12 @@ Arrays use **zero-based indexing**, which means the first element is at index `0
 
 **Example:**
 
-````js
+```js
 let fruits = ["Apple", "Banana", "Mango"];
 
 console.log(fruits[0]); // Apple
 console.log(fruits[1]); // Banana
+```
 
 Use this when you know the exact position of the element.
 
@@ -81,7 +82,8 @@ This is where **loops** become very useful.
 The traditional `for` loop is a **step-by-step approach** to access elements using their index.
 
 **Example:**
-```js
+
+````js
 let fruits = ["Apple", "Banana", "Mango"];
 
 // Loop through each element using its index
@@ -95,9 +97,10 @@ Banana
 Mango
 
 ---
-### 2. Using `for...of` Loop
 
-The `for...of` loop is **cleaner and simpler**. It directly gives you each element one by one without using an index.
+### 2. Using 'for...of' Loop
+
+The 'for...of' loop is **cleaner and simpler**. It directly gives you each element one by one without using an index.
 
 **Example:**
 ```js
@@ -108,10 +111,10 @@ for (let fruit of fruits) {
   console.log(fruit);
 }
 ```
+
 Apple
 Banana
 Mango
-
 
 ---
 
@@ -212,4 +215,8 @@ console.log(fruits);
 - `shift()` → remove element from the **beginning** of an array
 
 These methods are very common in real-world JavaScript applications.
+
+```
+
+```
 ````
