@@ -90,7 +90,6 @@ let fruits = ["Apple", "Banana", "Mango"];
 for (let i = 0; i < fruits.length; i++) {
   console.log(fruits[i]);
 }
-
 Output:
 Apple
 Banana
@@ -112,7 +111,7 @@ let fruits = ["Apple", "Banana", "Mango"];
 for (let fruit of fruits) {
   console.log(fruit);
 }
-```
+````
 
 Apple
 Banana
@@ -221,4 +220,7 @@ These methods are very common in real-world JavaScript applications.
 ```
 
 ```
-````
+
+```
+
+```
