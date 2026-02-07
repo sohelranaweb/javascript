@@ -240,8 +240,29 @@ console.log(visibleProducts);
 ```
 
 ```text
+Output:
 [
   "Product 1", "Product 2", "Product 3", "Product 4",
   "Product 5", "Product 6", "Product 7", "Product 8"
 ]
 ```
+
+### After Clicking "View All"
+
+```js
+visibleProducts = products.slice();
+console.log(visibleProducts);
+```
+```text
+Output:
+[
+  "Product 1", "Product 2", "Product 3", "Product 4",
+  "Product 5", "Product 6", "Product 7", "Product 8",
+  "Product 9", "Product 10", "Product 11", "Product 12",
+  "Product 13", "Product 14", "Product 15", "Product 16",
+  "Product 17", "Product 18", "Product 19", "Product 20"
+]
+```
+Key Point
+
+slice() is mainly used for data presentation (showing and hiding data), not for modifying the original array.
