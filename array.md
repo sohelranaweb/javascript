@@ -170,14 +170,78 @@ console.log(fruits);
 
 These methods are very common in real-world JavaScript applications.
 
+## Array Method: `slice()` in JavaScript
+
+### Definition
+
+`slice()` is a JavaScript array method that creates and returns a **new array** by copying a portion of an existing array.  
+It **does not change** the original array.
+
+**Syntax:**
+
+```js
+array.slice(startIndex, endIndex);
 ```
 
+- startIndex → where slicing starts (included)
+
+- endIndex → where slicing ends (not included)
+
+- If endIndex is omitted, slicing continues to the end of the array
+
+## When to Use `slice()`
+
+Use `slice()` when:
+
+- You want to show only part of an array
+- You need show / hide logic in the UI
+- You are building features like:
+  - View more / View all
+  - Load more
+  - Pagination
+  - Product previews
+- The original data must remain unchanged
+
+## Example 3: Real-World Use Case (Products)
+
+### Scenario
+
+- Total products: 20
+- Initially show only 8 products
+- On button click, show all products
+
+```js
+let products = [
+  "Product 1",
+  "Product 2",
+  "Product 3",
+  "Product 4",
+  "Product 5",
+  "Product 6",
+  "Product 7",
+  "Product 8",
+  "Product 9",
+  "Product 10",
+  "Product 11",
+  "Product 12",
+  "Product 13",
+  "Product 14",
+  "Product 15",
+  "Product 16",
+  "Product 17",
+  "Product 18",
+  "Product 19",
+  "Product 20",
+];
+
+// Initial view
+let visibleProducts = products.slice(0, 8);
+console.log(visibleProducts);
 ```
 
-```
-
-```
-
-```
-
+```text
+[
+  "Product 1", "Product 2", "Product 3", "Product 4",
+  "Product 5", "Product 6", "Product 7", "Product 8"
+]
 ```
