@@ -266,3 +266,124 @@ Output:
 Key Point
 
 slice() is mainly used for data presentation (showing and hiding data), not for modifying the original array.
+
+--- 
+
+# JavaScript Array `map()` Method
+
+## What is `map()`?
+
+`map()` is a built-in JavaScript array method used to transform data. It goes through each element of an array, applies a function to it, and returns a **new array** with the transformed values.
+
+Important points:
+
+* It does **not** change the original array
+* It always returns a new array
+* The length of the new array is the same as the original array
+
+---
+
+## What does `map()` do?
+
+`map()` takes a function and runs that function on every element of the array.
+
+For each item, it can:
+
+* Modify the value
+* Convert the value
+* Extract specific data
+* Return a completely new structure
+
+Example idea (no code yet):
+
+* Numbers → squared numbers
+* Objects → only specific properties
+* Raw API data → UI-friendly data
+
+---
+
+## Why is `map()` used?
+
+`map()` is used because it:
+
+* Makes code **clean and readable**
+* Follows **functional programming** principles
+* Avoids manual loops (`for`, `while`)
+* Prevents mutation of original data
+* Is perfect for **data transformation**
+
+In real projects, clean data flow is very important. `map()` helps you transform data without breaking the original source.
+
+---
+
+## Where is `map()` used?
+
+`map()` is heavily used in:
+
+### 1. Frontend Development (React, Vue, Angular)
+
+* Rendering lists (tables, cards, menus)
+* Transforming API response data before display
+
+### 2. Backend Development (Node.js)
+
+* Formatting database results
+* Shaping API responses
+* Cleaning or transforming data before sending it to the client
+
+### 3. Data Processing
+
+* Converting raw data into meaningful structures
+* Mapping IDs to names
+* Creating derived values
+
+---
+
+## When should you use `map()`?
+
+Use `map()` when:
+
+* You want to **transform** each element of an array
+* You need a **new array** as output
+* The output array length should match the input length
+* You are not trying to filter or remove items
+
+---
+
+## Real-life analogy
+
+Think of `map()` like a factory machine:
+
+* Raw materials go in
+* Every item passes through the same process
+* A new finished product comes out
+* Original materials remain unchanged
+
+Example:
+
+* List of students → list of student names
+* Prices → prices with tax added
+
+---
+
+## Key differences from similar methods
+
+| Method      | Purpose                       |
+| ----------- | ----------------------------- |
+| `map()`     | Transform each item           |
+| `forEach()` | Perform an action (no return) |
+| `filter()`  | Remove unwanted items         |
+| `reduce()`  | Combine into a single value   |
+
+---
+
+## Summary
+
+* `map()` is used to transform arrays
+* It returns a new array
+* It keeps original data safe
+* It is widely used in real-world applications
+* It makes code cleaner and more maintainable
+
+If you understand `map()`, you are already thinking like a professional JavaScript developer.
+
