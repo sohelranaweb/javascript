@@ -76,17 +76,66 @@
 // const arr = [1, 2, 2, 3, 1, 4, 4];
 // console.log(unique(arr));
 
-
-
 // 4. The usage of Unary function
-const cart = [
-  { name: "Book", price: 200 },
-  { name: "Pendrive", price: 800 },
-  { name: "Mouse", price: 500 },
-];
+// const cart = [
+//   { name: "Book", price: 200 },
+//   { name: "Pendrive", price: 800 },
+//   { name: "Mouse", price: 500 },
+// ];
 
-const getPrice = (item) => item.price;
-const addVat = (price) => price * 1.1;
-const formatCurrency = (amount) => `${amount.toFixed(2)}`;
-const finalPrice = cart.map(getPrice).map(addVat).map(formatCurrency);
-console.log(finalPrice);
+// const getPrice = (item) => item.price;
+// const addVat = (price) => price * 1.1;
+// const formatCurrency = (amount) => `${amount.toFixed(2)}`;
+// const finalPrice = cart.map(getPrice).map(addVat).map(formatCurrency);
+// console.log(finalPrice);
+
+// 5. Composition function
+
+// const double = (x) => x * 2;
+// const square = (x) => x * x;
+
+// let output1 = double(2);
+// let output2 = square(output1);
+// console.log(output2);
+
+// let output_final = square(double(2));
+// console.log(output_final);
+
+// 6.  Real-world: Counter (Closure)
+let count2 = 1;
+function makeCounter() {
+  let count = 0; // Lexical scope-এ আছে
+
+  return function () {
+    // count++; // ভেতরের function বাইরের count দেখতে পাচ্ছে
+    console.log(count2++);
+  };
+}
+
+const counter = makeCounter();
+counter(); // 1
+counter(); // 2
+counter(); // 3
+
+const level1 = "Level 1";
+
+function first() {
+  const level2 = "Level 2";
+
+  function second() {
+    const level3 = "Level 3";
+
+    function third() {
+      // তিনটাই দেখতে পাচ্ছে ✅
+      console.log(level1); // ✅ "Level 1"
+      console.log(level2); // ✅ "Level 2"
+      console.log(level3); // ✅ "Level 3"
+    }
+
+    third();
+  }
+
+  second();
+}
+
+first();
